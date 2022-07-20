@@ -60,6 +60,7 @@ h2 {
   height: 0.5rem;
   width: 0;
   background-color: var(--progress-color);
+  transition: .4s ease;
 }
 
 .item {
@@ -92,7 +93,8 @@ h2 {
   padding: 1rem 3rem;
   border-radius: 0.7rem;
   cursor: pointer;
-  letter-spacing: .2rem;
+  border: none;
+  letter-spacing: 0.2rem;
   transition: 0.4s ease;
 }
 
@@ -102,4 +104,9 @@ h2 {
 
 .btn:not(:last-child) {
   margin-right: 1rem;
+}
+
+.btn:disabled {
+  background-color: var(--line-color);
+  cursor: not-allowed;
 }
